@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="index.js"></script>
+        <link rel="stylesheet" href="./main.css">
     <meta charset="utf-8"/>
     <title>Hello World</title>
     <style>
@@ -12,25 +14,10 @@
   </head>
   <body>
     <h1>Hello GitHub!</h1>
-    <h2>Here is some information about <span class="userName"></span></h2>
-    <img src=""/>
-    <p>He lives in <span class="address"></span></p>
-  <script>
-    function useJsonOnPage (json) {
-      let name = document.querySelector('.userName');
-      name.textContent = json.name;
-      let avatar = document.querySelector('img');
-      avatar.src = json.avatar_url;
-      let home = document.querySelector('.address');
-      home.textContent = json.location;
-    }
-    //let json = { name: 'me', location: 'here'}
-    fetch("https://api.github.com/users/bgates")
-      .then(response => response.json())
-      .then(useJsonOnPage);
+    <h2>Here is some information about the movie <span class="userName"></span></h2>
+    <img class="movieposter" src=""/>
+    <p> <span class="overview"></span></p>
 
-
-  </script>
   </body>
 
 </html>
