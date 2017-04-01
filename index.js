@@ -1,5 +1,4 @@
-
-  function useJsonOnPage (json) {
+function useJsonOnPage (json) {
     let name = document.querySelector('.userName');
     name.textContent = json.title;
     let poster = document.querySelector(".movieposter");
